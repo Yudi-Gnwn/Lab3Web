@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML Lanjutan</title>
+    <!-- Koneksi ke CSS -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Membuat List, Table dan Form</h1>
+    </header>
+    <!-- Membuat Form Login -->
+    <form action="proses.php" method="post">
+      <fieldset>
+        <legend>Data Pelanggan</legend>
+        <p>
+          <label for="nama">Nama</label>
+          <input type="text" id="nama" name="nama" />
+        </p>
+        <p>
+          <label for="alamat">Alamat</label>
+          <textarea name="alamat" id="alamat" cols="20" rows="3"></textarea>
+        </p>
+        <p>
+          <label>Jenis Kelamin</label>
+          <input id="jk_l" type="radio" name="Kelamin" value="L" />
+          <label for="jk_l">Laki-Laki</label>
+          <input id="jk_p" type="radio" name="Kelamin" value="P" />
+          <label for="jk_p">Perempuan</label>
+        </p>
+        <p>
+          <input type="submit" value="login" />
+        </p>
+      </fieldset>
+    </form>
+    <!-- Membuat List -->
+    <section id="order-list">
+      <h2>Ordered List</h2>
+      <ol>
+        <li>Pemrograman Web 1</li>
+        <li>Matematika Terapan</li>
+        <li>Basis Data</li>
+      </ol>
+    </section>
+    <section id="unorder-list">
+      <h2>Unordered List</h2>
+      <ul type="square">
+        <li>Jaringan Komputer</li>
+        <li>Algoritma Struktur data</li>
+        <li>Pemrograman Objek</li>
+      </ul>
+    </section>
+    <!-- Membuat Tabel -->
+    <h1>Membuat Tabel</h1>
+    <section id="table">
+      <table border="1" cellpadding="4" cellspacing="0">
+        <thead>
+          <tr>
+            <th>No</th>
+            <th>Fakultas</th>
+            <th>Program Studi</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1</td>
+            <td rowspan="3">Teknik</td>
+            <td>Informatika</td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>Industri</td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td>Arsitektur</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+  </body>
+</html>
